@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,19 +22,18 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#shoe">Shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a  class="nav-link" href="#">Backpack</a>
+                    <a  class="nav-link" href="#backpack">Backpack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link"  href="#">Subscribe</a>
+                    <a class="nav-link"  href="#subscribe">Subscribe</a>
                   </li>
                 </ul>
               </div>
             </div>
         </nav>
-
         <section class="banner-sec mt-5">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 
@@ -127,7 +126,7 @@
                 </div>
               </div>
         </section>
-        <section class="shoes-sec mt-5">
+        <section class="shoes-sec mt-5" id="shoe">
             <div class="container">
                 <h1 class="mb-3">Shoes</h1>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -180,7 +179,7 @@
                   </div>
             </div>
         </section>
-        <section class="backpack-sec mt-5">
+        <section class="backpack-sec mt-5" id="backpack">
             <div class="container">
                 <h1 class="mb-3">Backpack</h1>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -233,8 +232,31 @@
                   </div>
             </div>
         </section>
+        <section class="subscriber-sec mt-5" id="subscribe">
+            <div class="container">
+                <div class="subscriber-sec-innr d-flex justify-content-center align-items-center p-5" style="background-color: #fceae8;">
+                    <div>
+                        <h2>LET'S STAY IN TOUCH</h2>
+                        <p>Get updates on sales, specials and more</p>
+                        <form>
+                            <div class="mb-2">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <button type="submit" class="btn btn-warning text-white fw-bold">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
+    
+    <footer class="fooer mt-5">
+        <div class="container">
+            <div class="ftr-cntlr text-center">
+                <p>©2023. Panda Commerce. All rights reserved. Sofia, Bulgaria.</p>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
